@@ -35,6 +35,4 @@ export async function getUsers(usernames: readonly string[]) {
     return users
 }
 
-export const userLoader = new Dataloader(getUsers, {
-    batchScheduleFn: callback => setTimeout(callback, 500)
-})
+export const userLoader = new Dataloader(getUsers)

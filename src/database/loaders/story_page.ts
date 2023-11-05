@@ -28,6 +28,4 @@ export async function getStoryPages(names: readonly string[]) {
     return pages
 }
 
-export const storyPageLoader = new Dataloader(getStoryPages, {
-    batchScheduleFn: callback => setTimeout(callback, 500)
-})
+export const storyPageLoader = new Dataloader(getStoryPages)

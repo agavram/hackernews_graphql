@@ -46,6 +46,4 @@ export async function getItems(ids: readonly number[]) {
     return items
 }
 
-export const itemLoader = new Dataloader(getItems, {
-    batchScheduleFn: callback => setTimeout(callback, 200)
-})
+export const itemLoader = new Dataloader(getItems)
