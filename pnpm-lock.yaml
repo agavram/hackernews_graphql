@@ -28,6 +28,9 @@ devDependencies:
   '@types/node':
     specifier: ^16.4.7
     version: 16.4.7
+  bun-types:
+    specifier: latest
+    version: 1.0.9
   ts-node-dev:
     specifier: ^1.1.8
     version: 1.1.8(typescript@4.3.5)
@@ -644,6 +647,10 @@ packages:
 
   /buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
+    dev: true
+
+  /bun-types@1.0.9:
+    resolution: {integrity: sha512-9zWU5b/D41v4h5YgQxMW7aUvwYqMhU7WRjhPMN73XE6MNl5mvZ5vgAEWV8Lisdd4JgDSdWk2t9oY6kYqeDhQSA==}
     dev: true
 
   /chokidar@3.5.2:
